@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مشاوره آنلاین تخصصی در زمینه روانشناسی، خانواده و تحصیلی.">
+  <meta name="keywords" content="مشاوره روانشناسی، مشاوره خانواده، مشاوره تحصیلی">
+  <title>مشاوره آنلاین</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <style>
+    body { font-family: Tahoma, sans-serif; }
+    #hero { background-color: #cce7ff; padding: 80px 0; text-align: center; }
+    .card { margin-bottom: 20px; }
+    footer { background-color: #005f99; color: #fff; padding: 20px 0; text-align: center; }
+    .btn-primary { background-color: #005f99; border: none; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">مشاوره آنلاین</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#services">خدمات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">بلاگ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">تماس با ما</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <h1>راه حل مشکلات شما، آنلاین و تخصصی</h1>
+      <p>با مشاوران ما در هر زمینه‌ای تماس بگیرید و آرامش را تجربه کنید.</p>
+      <a href="#contact" class="btn btn-primary btn-lg">رزرو جلسه</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">خدمات ما</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card p-3 h-100">
+            <h5 class="card-title">مشاوره روانشناسی</h5>
+            <p class="card-text">حل مشکلات اضطراب، استرس و افسردگی با مشاوران مجرب.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 h-100">
+            <h5 class="card-title">مشاوره خانواده</h5>
+            <p class="card-text">بهبود روابط خانوادگی و ارتباط موثر با اعضای خانواده.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 h-100">
+            <h5 class="card-title">مشاوره تحصیلی</h5>
+            <p class="card-text">راهنمایی در مسیر تحصیلی و موفقیت در امتحانات و کنکور.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">آخرین مقالات</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h5 class="card-title">چگونه استرس امتحان را کاهش دهیم؟</h5>
+            <p class="card-text">تکنیک‌های ساده برای کاهش اضطراب و تمرکز بهتر هنگام مطالعه.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h5 class="card-title">راهکارهای ارتباط بهتر با همسر</h5>
+            <p class="card-text">روش‌های موثر برای ایجاد صمیمیت و حل اختلافات خانوادگی.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">تماس با ما</h2>
+      <form class="mx-auto" style="max-width:500px;" id="contactForm">
+        <div class="mb-3">
+          <input type="text" class="form-control" name="name" placeholder="نام شما" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" name="email" placeholder="ایمیل شما" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="پیام شما" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">ارسال پیام</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 سایت مشاوره آنلاین. تمامی حقوق محفوظ است.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // فرم ساده بدون backend
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('پیام شما ارسال شد!'); 
+      this.reset();
+    });
+  </script>
+</body>
+</html>
